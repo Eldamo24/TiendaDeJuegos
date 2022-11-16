@@ -1,0 +1,9 @@
+{% extends 'Tienda/base.html' %}
+{% block contenido %}
+    <h1>Ingrese juego</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{formulario.as_p}}
+        <input type="submit" value="Crear juego">
+    </form>
+{% endblock %}

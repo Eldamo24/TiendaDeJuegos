@@ -27,11 +27,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Juegos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Consolas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Iniciar sesion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Tienda-inicio' %}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Tienda-registro' %}">Registrarse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Tienda-juego' %}">Juegos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Tienda-consola' %}">Consolas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Tienda-iniciar-sesion' %}">Iniciar sesion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Tienda-busqueda' %}">Buscar</a></li>
                     </ul>
                 </div>
             </div>

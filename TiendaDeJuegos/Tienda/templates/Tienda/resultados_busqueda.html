@@ -1,0 +1,8 @@
+{% extends 'Tienda/base.html' %}
+{% block contenido %}
+<ul>
+    {% for juegos in juego %}
+    <li>Nombre: {{juegos.nombre_juego}} - Precio: {{juegos.precio}} - Sinopsis: {{juegos.sinopsis}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

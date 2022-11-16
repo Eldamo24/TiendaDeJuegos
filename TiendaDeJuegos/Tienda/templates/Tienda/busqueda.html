@@ -1,0 +1,9 @@
+{% extends 'Tienda/base.html' %}
+{% block contenido %}
+<form action="{% url 'Tienda-busqueda-resultado' %}" method="get">
+    <p>
+        Nombre del juego: <input type="text" name="nombre_juego">
+        <input type="submit" value="Buscar">
+    </p>
+</form>
+{% endblock %}
